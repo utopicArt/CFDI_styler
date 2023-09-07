@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Fecha="2022-12-28T19:54:42" Sello="G+jXk9ugh8X4D2IsR54etYauw==" FormaPago="99" NoCertificado="01960418" Certificado="MIIGQjCVSVklDSU8U8NKT/UaNxKQuD6AsMU52YLrz4uMCeTUxtX2YEfyl2qkVmdiXi+szky6ScQfxEghcOgdKRfd/VP5HxJ7zAlS8Q3+WI4WAF/CyyR7ZwarnTQNhg+iXJIeQ==" SubTotal="52595.00" Moneda="MXN" Total="52595.00" TipoDeComprobante="I" Exportacion="01" MetodoPago="PPD" LugarExpedicion="44210" xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <cfdi:InformacionGlobal Periodicidad="04" Meses="08" Año="2022" />
+  <cfdi:Emisor Rfc="XXYZ1234" Nombre="NOMBRE DEL NEGOCIO" RegimenFiscal="603" />
+  <cfdi:Receptor Rfc="XAXX010101000" Nombre="PUBLICO EN GENERAL" DomicilioFiscalReceptor="12345" RegimenFiscalReceptor="616" UsoCFDI="S01" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="94111702" Cantidad="1.00" ClaveUnidad="C62" Unidad="Uno" Descripcion="Esta es una descripcion de ejemplo" ValorUnitario="12345" Importe="12345.00" ObjetoImp="01" />
+    <cfdi:Concepto ClaveProdServ="94111703" Cantidad="2.00" ClaveUnidad="C62" Unidad="Uno" Descripcion="Esta es una segunda descripcion de ejemplo" ValorUnitario="12345" Importe="12345.00" ObjetoImp="02" />
+    <cfdi:Concepto ClaveProdServ="94111704" Cantidad="3.00" ClaveUnidad="C62" Unidad="Uno" Descripcion="Esta es una tercera descripcion de ejemplo" ValorUnitario="12345" Importe="12345.00" ObjetoImp="03" />
+  </cfdi:Conceptos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" Version="1.1" UUID="JRF3F-ABC5-48G4-F5EV-23H005ECOD" FechaTimbrado="2022-12-28T19:54:59" RfcProvCertif="SAT970701NN3" SelloCFD="G+jXk9ugh8X4eodIunsR54etYauw==" NoCertificadoSAT="00005000000266465020" SelloSAT="mZ+2zmq1vwTTOR/nQ/+clw2/0Cwlz/Nr1+ZSrQ==" />
+  </cfdi:Complemento>
+</cfdi:Comprobante>
