@@ -12,6 +12,7 @@ document.getElementById("file").addEventListener("change", function (e) {
   
 function readXMLDataFromFile(xml){
     var xmlDoc = xml.responseXML;
+    var cntr = 0;
 
     // 1. Datos Globales del CFDI
     console.error("Elementos Generales");
@@ -20,6 +21,7 @@ function readXMLDataFromFile(xml){
     if (comprobante) {
         for(let i = 0; i < atributosComprobante.length; i++){
             console.log(atributosComprobante[i] + ": " + comprobante.getAttribute(atributosComprobante[i]));
+            cntr++;
         }
     } else {
         alert("El elemento cfdi:Comprobante no se encontró en el documento XML.");
@@ -32,6 +34,7 @@ function readXMLDataFromFile(xml){
     if (informacionGlobal) {
         for(let i = 0; i < atributosInfGlob.length; i++){
             console.log(atributosInfGlob[i] + ": " + informacionGlobal.getAttribute(atributosInfGlob[i]));
+            cntr++;
         }
     } else {
         alert("El elemento cfdi:Emisor no se encontró en el documento XML.");
@@ -44,6 +47,7 @@ function readXMLDataFromFile(xml){
     if (emisor) {
         for(let i = 0; i < atributosEmisor.length; i++){
             console.log(atributosEmisor[i] + ": " + emisor.getAttribute(atributosEmisor[i]));
+            cntr++;
         }
     } else {
         alert("El elemento cfdi:Emisor no se encontró en el documento XML.");
@@ -56,6 +60,7 @@ function readXMLDataFromFile(xml){
     if (receptor) {
         for(let i = 0; i < atributosReceptor.length; i++){
             console.log(atributosReceptor[i] + ": " + receptor.getAttribute(atributosReceptor[i]));
+            cntr++;
         }
     } else {
         alert("El elemento cfdi:Receptor no se encontró en el documento XML.");
@@ -73,6 +78,7 @@ function readXMLDataFromFile(xml){
                 var concepto = conceptoElements[i];
                 for(let i = 0; i < atributosConcepto.length; i++){
                     console.log(atributosConcepto[i] + ": " + concepto.getAttribute(atributosConcepto[i]));
+                    cntr++;
                 }
             }
         }
@@ -87,8 +93,10 @@ function readXMLDataFromFile(xml){
     if (receptor) {
         for(let i = 0; i < atributosReceptor.length; i++){
             console.log(atributosReceptor[i] + ": " + receptor.getAttribute(atributosReceptor[i]));
+            cntr++;
         }
     } else {
         alert("El elemento cfdi:Receptor no se encontró en el documento XML.");
     }
+    console.error(cntr); // 52
 }
