@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/index.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="dataLoader">
-        <h3>Cargar Archivo</h3>
-        <input type="file" id="file" name="file" accept=".xml" /><br/>
-        <button id="readFileButton">Generar Archivo</button>
+      <h3>Cargar Archivo</h3>
+      <input type="file" id="file" name="file" accept=".xml" /> <br /><br />
+      <button id="readFileButton">Generar PDF</button>
     </div>
-    <div class="factura">
-        <p id="data"></p>
+    ===
+
+    <div class="grid-container">
+      <div class="grid-item item1">logo</div>
+      <div class="grid-item item2">Datos Empresa</div>
+      <div class="grid-item item3">Folio y Receptor</div>
+      <div class="grid-item item4">Conceptos</div>
+      <div class="grid-item item5">Sellos CFDI / SAT</div>
+      <div class="grid-item item6">QR</div>
+      <div class="grid-item item7">Cadena Original</div>
     </div>
+    ===
+
     <script src="./src/js/index.js"></script>
-</body>
+  </body>
 </html>
